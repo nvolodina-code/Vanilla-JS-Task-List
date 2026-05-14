@@ -1,0 +1,144 @@
+:root {
+    --color-accent: #546B41;
+    --color-bg: #fffefa;
+    --color-border: #3a3a3a;
+    --color-delete: #e05555;
+    --color-hover: #99AD7A;
+    --color-muted: #a0a0a0;
+    --color-text: #444444;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    align-items: center;
+    background: var(--color-bg);
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+ul {
+    padding: 4rem 0 0;
+}
+
+h1,p,li,span,.btn {
+    color: var(--color-surface);
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 400;
+}
+
+h1 {
+    color: var(--color-text);
+    font-family: 'Domine', serif;
+    font-size: 3rem;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+li {
+    align-items: center;
+    border-bottom: 0.1rem solid var(--color-border);
+    display: flex;
+    justify-content: space-between;
+    line-height: 1.5;
+    list-style-type: none;
+    padding: 1rem 0;
+}
+
+input {
+    background: var(--color-bg);
+    border: 0.1rem solid var(--color-border);
+    border-radius: 0.6rem 0 0 0.6rem;
+    border-right: 0;
+    color: var(--color-surface);
+    flex: 1;
+    padding: 0.8rem 1.2rem;
+}
+
+input:focus {
+    border-color: var(--color-accent);
+    outline: none;
+}
+
+.btn {
+    cursor: pointer;
+    font-size: 1.6rem;
+    padding: 0.75rem 1.5rem;
+}
+
+.btn__solid {
+    color: var(--color-bg);
+    background: var(--color-accent);
+    border: 0.1rem solid var(--color-accent);
+    border-radius: 0 0.6rem 0.6rem 0;
+}
+
+.btn__solid:hover {
+    background: var(--color-hover);
+    border-color: var(--color-hover);
+}
+
+.btn__outline {
+    background: transparent;
+    border: 0.1rem solid var(--color-accent);
+    border-radius: 0.6rem;
+    color: var(--color-accent);
+}
+
+.btn__outline:hover {
+    border: 0.1rem solid var(--color-hover);
+    color: var(--color-hover);
+}
+
+.btn__delete {
+    background: var(--color-delete);
+    border: var(--color-delete);
+    border-radius: 0.6rem;
+    color: var(--color-bg);
+}
+
+.btn__delete:hover {
+    background: var(--color-bg);
+    border: 0.1rem solid var(--color-delete);
+    color: var(--color-delete);
+}
+
+.button-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.completed {
+    color: var(--color-muted);
+    text-decoration: line-through;
+}
+
+.counter {
+    color: var(--color-muted);
+    font-size: 1.4rem;
+    padding: 3rem 0 1rem;
+}
+
+.input-container {
+    display: flex;
+}
+
+.task {
+    display: flex;
+    font-size: 1.6rem;
+    gap: 1.2rem;
+}
+
+.wrapper {
+    background: var(--color-bg);
+    border-radius: 2.5rem;
+    box-shadow: rgba(68, 68, 68, 0.15) 0px 0px 1.7rem 0px;
+    margin: 0 auto;
+    max-width: 48rem;
+    padding: 3.2rem;
+    width: 100%;
+}
