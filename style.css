@@ -19,10 +19,6 @@ body {
     min-height: 100vh;
 }
 
-ul {
-    padding: 4rem 0 0;
-}
-
 h1,p,li,span,.btn {
     font-family: 'Nunito Sans', sans-serif;
     font-weight: 400;
@@ -43,7 +39,7 @@ li {
     justify-content: space-between;
     line-height: 1.5;
     list-style-type: none;
-    padding: 1rem 0;
+    padding: 2rem 0;
 }
 
 input {
