@@ -3,7 +3,6 @@
     --color-bg: #fffefa;
     --color-border: #3a3a3a;
     --color-delete: #e05555;
-    --color-hover: #99AD7A;
     --color-muted: #a0a0a0;
     --color-text: #444444;
 }
@@ -25,7 +24,6 @@ ul {
 }
 
 h1,p,li,span,.btn {
-    color: var(--color-surface);
     font-family: 'Nunito Sans', sans-serif;
     font-weight: 400;
 }
@@ -77,8 +75,8 @@ input:focus {
 }
 
 .btn__solid:hover {
-    background: var(--color-hover);
-    border-color: var(--color-hover);
+    background: transparent;
+    color: var(--color-accent);
 }
 
 .btn__outline {
@@ -89,8 +87,8 @@ input:focus {
 }
 
 .btn__outline:hover {
-    border: 0.1rem solid var(--color-hover);
-    color: var(--color-hover);
+    background: var(--color-accent);
+    color: var(--color-bg);
 }
 
 .btn__delete {
