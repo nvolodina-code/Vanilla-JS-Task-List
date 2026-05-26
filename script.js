@@ -3,6 +3,10 @@ const btn = document.getElementById('btn');
 const ul = document.getElementById('ul');
 const number = document.getElementById('number');
 let tasks = [];
+const saved = localStorage.getItem('tasks');
+    if(saved) {
+        tasks = JSON.parse(saved);
+    }
 
 
 const addTask = () => {
@@ -28,6 +32,7 @@ const toggleComplete = (id) => {
 };
 
 const updateUI = () => {
+    localStorage.setItem('tasks', JSON.stringify(tasks))
     ul.innerHTML = tasks.map(task => `
         <li class="task" id="${task.id}">
             <span class="${task.completed ? 'completed' : ''}">${task.text}</span>
@@ -37,6 +42,7 @@ const updateUI = () => {
             </div>
         </li>
     `).join('');
+    
 
     const remaining = tasks.filter(t => !t.completed).length;
     number.innerText = remaining;
